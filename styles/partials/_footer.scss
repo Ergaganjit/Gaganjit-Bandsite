@@ -1,0 +1,135 @@
+@use "../partials/mixins" as *;
+@use "../partials/variables" as *;
+@use "../partials/typography" as *;
+
+.footer {
+    background-color: $bandSite-black;
+    padding-bottom: 1rem;
+
+    @include tablet {
+        padding-bottom: 2rem;
+    }
+
+    &__wrapper {
+        padding: 0 1rem;
+        color: white;
+        font-family: "Avenir";
+        font-weight: 400;
+
+        @include tablet {
+            padding: 0 2.25rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        @include desktop {
+            padding: 0;
+            max-width: 65rem;
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        padding: 1rem 0 1rem 0;
+        font-family: "Avenir";
+        font-weight: 700;
+
+        @include tablet {
+            padding: 3rem 0 1rem 0;
+            flex-basis: 33.5%;
+            font-size: 2rem;
+            max-width: 16.5rem;
+            order: -1;
+        }
+    }
+
+    &__socials {
+        @include tablet {
+            order: -1;
+        }
+    }
+
+    &__contacts {
+        width: 100%;
+        padding: 1rem 0 2rem 0;
+
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            max-width: 50rem;
+        }
+    }
+
+    &__logo {
+        padding-top: 1rem;
+
+        @include tablet {
+            padding-top: 3rem;
+            flex-basis: 7.5rem;
+            order: -1;
+            margin-left: auto;
+        }
+    }
+
+    &__copyright {
+        font-weight: 600;
+        font-size: .625rem;
+        padding-top: 1rem;
+
+        @include tablet {
+            flex-basis: 100%;
+            font-size: .875rem;
+            padding: 0;
+        }
+    }
+}
+
+.social {
+    margin-right: 1.5rem;
+
+    &__icon {
+        height: 1.5rem;
+    }
+}
+
+.agency {
+    @include tablet {
+        flex-basis: 16rem;
+
+        &:nth-child(2) {
+            margin-left: 1rem 0 1rem 0;
+        }
+    }
+
+    &__person {
+        font-weight: 600;
+    }
+
+    &__line {
+        margin-top: -1rem;
+
+        @include tablet {
+            margin-top: 2rem;
+        }
+    }
+
+    &__address {
+        @include tablet {
+            margin-top: -1rem;
+        }
+    }
+
+    &__email {
+        display: block;
+        color: $white;
+        text-decoration: none;
+        width: 100%;
+        margin: 1rem 0 1rem 0;
+
+        @include tablet {
+            margin-top: 2rem;
+        }
+    }
+}

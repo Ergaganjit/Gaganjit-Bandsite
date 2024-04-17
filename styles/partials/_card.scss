@@ -1,0 +1,83 @@
+@use "../partials/mixins" as *;
+@use "../partials/variables" as *;
+@use "../partials/typography" as *;
+
+.site-main {
+  margin: 0 auto;
+
+  padding: 0.625rem &__title {
+    font-size: 2rem;
+  }
+}
+
+.card-section {
+  background-color: $alabaster;
+
+  &__title {
+    font-size: 2rem;
+    padding-top: 2.3125rem;
+    margin-left: 1.625rem;
+    font-family: "Avenir";
+    font-weight: 600;
+    color: $bandSite-black;
+
+    @include tablet {
+      font-size: 3rem;
+      padding-top: 3.5625rem;
+      padding-left: 2.875rem;
+    }
+
+    @include desktop {
+      font-size: 3rem;
+      padding-top: 3.5625rem;
+      padding-left: 4.625rem;
+    }
+  }
+
+  &__flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
+
+    @include desktop {
+      padding-left: 6.75rem;
+      padding-right: 6.4375rem;
+    }
+  }
+
+  .card {
+    padding: 0.625rem;
+    width: 100%;
+    min-width: 12.5rem;
+
+    @include tablet {
+      width: 33%;
+    }
+
+    @include desktop {
+      width: 33%;
+    }
+
+    &__link-wrapper {
+      text-decoration: none;
+      color: #000;
+    }
+
+    &__title {
+      font-size: 2.25rem;
+    }
+
+    &__img {
+      opacity: 0.75;
+    }
+
+    &__img:hover {
+      opacity: 1;
+    }
+
+    &__description {
+      font-size: 1rem;
+    }
+  }
+}

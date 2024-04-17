@@ -1,0 +1,48 @@
+@use "../partials/mixins" as *;
+@use "../partials/variables" as *;
+@use "../partials/typography" as *;
+
+/* Start: Header style */
+.header {
+    background-color: $bandSite-black;
+
+    @include tablet {
+        display: flex;
+    }
+    &__logo-link {
+
+        @include tablet {
+            display: flex;
+            width: 17rem;
+        }
+        @include desktop {
+            width: 30rem;
+        }
+    }
+
+    /* Start: Logo Part Style */
+
+    &__logo {
+
+        margin: auto;
+        display: flex;
+        margin-bottom: 1.4rem;
+        padding-top: 1rem;
+        @include tablet {
+
+            margin: auto;
+            margin-bottom: 2.3rem;
+            margin-top: 1.2rem;
+        }
+        @include desktop {
+            margin: auto;
+            margin-bottom: 2.1rem;
+            margin-top: 1.2rem;
+        }
+    }
+
+    /* End: Logo Part Style */
+
+}
+
+/* End: Header Style */

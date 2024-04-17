@@ -1,0 +1,73 @@
+@use "../partials/mixins" as *;
+@use "../partials/variables" as *;
+@use "../partials/typography" as *;
+/* Start: Header style */
+
+.nav {
+    color: $white;
+
+    /* Start: Navigation link Part Style */
+    &__links {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-family: "Avenir";
+        font-weight: 400;
+        line-height: 3rem;
+
+        @include tablet {
+            line-height: 5rem;
+            text-align: start;
+            justify-content: space-around;
+        }
+
+    }
+
+    /* End: Navigation link Part Style */
+
+    /* Start: Navigation link itens Style */
+
+    &__link {
+        list-style-type: none;
+        width: 20rem;
+        font-size: 1.2rem;
+        font-family: "Avenir";
+        font-weight: 400;
+
+        @include tablet {
+            width: 7rem;
+        }
+
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.5;
+            transition: 1s;
+        }
+
+        &--active {
+            padding-bottom: 0.9rem;
+            border-bottom: 0.25rem solid $white;
+            font-family: "Avenir";
+            font-weight: 700;
+
+            @include tablet {
+                margin-right: 30%;
+
+            }
+        }
+
+        @include tablet {
+            font-size: 1.2rem;
+        }
+
+        @include desktop {
+            font-size: 1.2rem;
+        }
+    }
+
+    /* End: Navigation link itens Style */
+}
+
+/* End: Header Style */

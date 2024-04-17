@@ -1,0 +1,60 @@
+@use "../partials/mixins" as *;
+@use "../partials/variables" as *;
+@use "../partials/typography" as *;
+
+.banner {
+    background: url("../../assets/Images/hero-bio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    min-height: 15.625rem;
+    max-height: 37.5rem;
+    display: flex;
+    align-items: center;
+
+
+    width: 100%;
+
+    @include desktop {
+        height: 100vh;
+    }
+
+    &__container {
+        background-color: $bandSite-black;
+        opacity: 0.3;
+        position: absolute;
+        height: 50vh;
+        min-height: 15.625rem;
+        max-height: 37.5rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+
+        @include desktop {
+            height: 100vh;
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
+        line-height: 2rem;
+        padding-left: 1rem;
+        color: $white;
+        margin: 0;
+        z-index: 1;
+
+        @include tablet {
+            padding-left: 2rem;
+            font-size: 3.3rem;
+            line-height: 4.3rem;
+        }
+
+        @include desktop {
+            font-size: 5rem;
+            width: 50%;
+            padding-left: 6.25rem;
+        }
+    }
+}
