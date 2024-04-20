@@ -147,6 +147,92 @@ img {
 
 /* End: Header Style */
 /* Shows Style */
+.hero {
+  background-image: url("../../assets/images/hero-shows.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 18.75rem;
+  align-items: flex-start;
+}
+@media (min-width: 768px) {
+  .hero {
+    height: 30rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero {
+    height: 37.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .hero__song {
+    width: 65%;
+    height: 9.375rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__song {
+    width: 40%;
+    height: 7.5rem;
+  }
+}
+.hero__content {
+  width: 90%;
+  position: absolute;
+}
+@media (min-width: 1280px) {
+  .hero__content {
+    padding-top: 10rem;
+    display: flex;
+  }
+}
+.hero__album {
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .hero__album {
+    font-size: 1.6rem;
+  }
+}
+.hero__iframe {
+  margin-left: 0.625rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .hero__iframe {
+    width: 54%;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__iframe {
+    width: 30%;
+    margin-top: 8rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__text {
+    display: inline-block;
+    width: 50%;
+  }
+}
+.hero__album-details {
+  width: 100%;
+  line-height: 3.75rem;
+  margin-top: 0.625rem;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .hero__album-details {
+    width: 85%;
+    font-size: 3.8rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__album-details {
+    font-size: 2.8rem;
+  }
+}
+
 /* Footer style */
 .footer {
   background-color: #323232;

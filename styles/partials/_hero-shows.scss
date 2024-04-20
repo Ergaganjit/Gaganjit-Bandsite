@@ -1,0 +1,93 @@
+@use "../partials/mixins" as *;
+@use "../partials/variables" as *;
+@use "../partials/typography" as *;
+.hero {
+    background-image: url("../../assets/images/hero-shows.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 18.75rem;
+    align-items: flex-start;
+
+  
+
+    @include tablet {
+        height: 30rem;
+    }
+
+    @include desktop {
+        height: 37.5rem;
+    }
+
+    &__song {
+
+        @include tablet {
+            width: 65%;
+            height: 9.375rem;
+        }
+
+        @include desktop {
+            width: 40%;
+            height: 7.5rem;
+        }
+    }
+
+    &__content {
+        width: 90%;
+        position: absolute;
+
+        @include desktop {
+            padding-top: 10rem;
+            display: flex;
+        }
+
+
+    }
+
+    &__album {
+      
+        color:$white;
+        @include tablet {
+            font-size: 1.6rem;
+
+        }
+    }
+
+    &__iframe {
+
+        margin-left: 0.625rem;
+        width: 100%;
+       
+        @include tablet {
+            width: 54%;
+        }
+
+        @include desktop {
+            width: 30%;
+            margin-top: 8rem;
+        }
+
+    }
+
+    &__text {
+        @include desktop {
+            display: inline-block;
+            width: 50%;
+        }
+    }
+
+    &__album-details {
+        width: 100%;
+        line-height: 3.75rem;
+        margin-top: 0.625rem;
+       color:$white;
+
+        @include tablet {
+            width: 85%;
+            font-size: 3.8rem;
+        }
+
+        @include desktop {
+            font-size: 2.8rem;
+        }
+    }
+}
