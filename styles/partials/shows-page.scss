@@ -1,0 +1,28 @@
+@use '../partials/mixins' as *;
+       @use '../partials/variables' as *;
+
+       /* Global style */
+       @use '../partials/global' as *;
+
+       /* Header style */
+       @use '../partials/header' as *;
+
+       /* Navbar style */
+       @use '../partials/primaryNav' as *;
+
+        /* Hero style */
+        @use '../partials/hero' as *;
+
+        /* Shows Style */
+        @use '../partials/shows' as *;
+
+        // For shows section
+
+        @use '../partials/hero-shows' as *;
+
+
+        /* Footer style */
+        @use '../partials/footer' as *;
+
+        /*Customized  Font style */
+        @use '../partials/typography' as *;
