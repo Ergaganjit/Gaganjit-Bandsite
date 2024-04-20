@@ -16,8 +16,8 @@
         <!-- Navigation List -->
         <nav class="nav">
             <ul class="nav__links">
-                <li class="nav__link nav__link--active"><a href="./index.html">Biography</a></li>
-                <li class="nav__link"><a href="./pages/shows.html">Shows</a></li>
+                <li class="nav__link nav__link--active">Biography</li>
+                <li class="nav__link">Shows</li>
             </ul>
         </nav>
     </header>
@@ -119,29 +119,15 @@
             </section>
         </div>
         <!-- End: Photo Gallery  Section -->
-             <!-- Start: Comments Section -->
-             <article class="comment">
-                <h3 class="comment__title">Join the Conversation</h3>
-                <form action="" method="post" class="comment__form">
-                    <div class="comment__row">
-                        <div class="comment__picture">
-                            <img class="comment__profile-picture" src="./assets/images/Mohan-muruge.jpg"
-                                alt="profile picture">
-                        </div>
-                        <div class="comment__detail">
-                            <label for="name" class="comment__label">NAME</label>
-                            <input type="text" name="name" id="name" placeholder="Enter your name" class="comment__element">
-                            <label for="name" class="comment__label">COMMENT</label>
-                            <input type="text" name="comment" id="comment" placeholder="Add a new comment" class="comment__element-second">
-                            <div class="comment__submit-button">
-                                <button type="submit" class="comment__submit">COMMENT</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <div class="comment__box"></div>
-            </article>
-            <!-- End: Comments Section -->
+         <!-- Start: Comments Section -->
+         <form class="todo-form">
+            <input type="text" placeholder="todo name" name="name" />
+            <textarea placeholder="todo description" name="description"></textarea>
+            <button type="submit">Add Todo</button>
+          </form>
+      
+          <ul class="todo-list"></ul>
+        <!-- End: Comments Section -->
     </main>
     <!-- Start: Footer Section -->
     <footer class="footer">

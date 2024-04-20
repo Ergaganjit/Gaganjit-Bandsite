@@ -23,6 +23,14 @@
         }
 
     }
+    a {
+        text-decoration: none !important;
+    }
+
+    &__link1{
+
+        margin-right: 36%;
+    }
 
     /* End: Navigation link Part Style */
 
@@ -45,7 +53,9 @@
             opacity: 0.5;
             transition: 1s;
         }
-
+  a {
+            color: white;
+        }
         &--active {
             padding-bottom: 0.9rem;
             border-bottom: 0.25rem solid $white;

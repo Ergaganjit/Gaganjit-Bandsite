@@ -1,0 +1,310 @@
+@use "../partials/mixins" as *;
+@use "../partials/variables" as *;
+@use "../partials/typography" as *;
+
+.comment {
+
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-bottom: 2.5rem;
+
+
+  &__title {
+    margin: 4vh 0;
+    font-family: 'Avenir';
+    font-weight: 600;
+    color: $bandSite-black;
+    font-size: 1.5rem;
+    padding-left: 0.9375rem;
+
+
+    @include tablet {
+      font-size: 3rem;
+      padding-left: 3.8125rem;
+    }
+
+    @include desktop {
+      margin-left: 4.0625rem;
+      width: 70%;
+      margin-top: 0.3125rem;
+    }
+  }
+
+
+  &__form {
+    width: 94%;
+
+    @include tablet {
+      width: auto;
+      margin-left: 5rem;
+      margin-right: 5rem;
+    }
+
+    @include desktop {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__label {
+    display: block;
+    color: $silver;
+    font-family: 'Avenir';
+    margin-bottom: 0.3125rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+
+  }
+
+
+  &__element {
+    border: 0.0938rem solid #E1E1E1;
+    border-radius: 0.3125rem;
+    width: 100%;
+    height: 2.8125rem;
+    line-height: 2em;
+    padding-left: 0.625rem;
+    margin-bottom: 1.875rem;
+    box-sizing: border-box;
+
+    @include tablet {
+      height: 3.4375rem;
+      font-size: 1rem;
+    }
+
+    @include desktop {
+      height: 3.75rem;
+      font-size: 1rem;
+    }
+
+
+  }
+
+  &__element-second {
+
+    border: 0.0938rem solid #E1E1E1;
+    border-radius: 0.3125rem;
+    width: 100%;
+    height: 7.6875rem;
+    line-height: 2em;
+    padding-left: 0.625rem;
+    margin-bottom: 0.625rem;
+    box-sizing: border-box;
+
+    @include desktop {
+      height: 7.8125rem;
+      font-size: 1rem;
+    }
+  }
+
+
+
+
+  input[type="text"],
+  textarea {
+
+    background-color: $alabaster;
+
+  }
+
+  ::placeholder {
+    color: $bandSite-darkBlack;
+    left: 0.625rem;
+    top: 0.625rem;
+    position: absolute;
+    vertical-align: 0;
+    font-size: 0.9375rem;
+    letter-spacing: 0.1em;
+  }
+
+  &__row {
+    display: flex;
+
+  }
+
+  &__picture {
+    margin-top: 1.4375rem;
+    margin-right: 1.25rem;
+    width: 15%;
+
+    @include desktop {
+
+      margin-top: 0.75rem;
+      margin-right: 1.25rem;
+      width: 15%;
+      height: 9vh;
+    }
+  }
+
+  &__nameAndDate-date {
+    color: $silver;
+    font-family: 'Avenir Next Regular';
+    display: flex;
+    justify-content: right;
+    font-size: 1.0625rem;
+    // @include mobile {
+    //   font-size: 1.0625rem;
+
+    // }
+
+  }
+
+  &__nameAndDate-name {
+
+    font-family: "Avenir Next Regular";
+    color: #323232;
+    font-weight: bold;
+    font-size: 1.0625rem;
+    // @include mobile {
+    //  
+    // }
+  }
+
+  &__parg {
+
+    font-family: 'Avenir Next Regular';
+    font-size: 1.125rem;
+      margin-top: 0rem;
+    // @include mobile {
+    //   font-family: "Avenir Next Regular";
+    //   font-size: 1.125rem;
+    //   margin-top: 0rem;
+    // }
+
+  }
+
+
+  &__detail {
+    width: 74vw;
+
+    @include tablet {
+      width: 115vw;
+      margin-top: 0.5625rem;
+    }
+
+    @include desktop {
+      width: 30vw;
+    }
+
+  }
+
+  &__nameAndDate {
+
+    display: flex;
+    padding-top: 0.375rem;
+  }
+
+
+
+  &__profile-picture {
+
+    border-bottom: 0.0625rem solid $mercury;
+    border-radius: 100%;
+    margin-left: 0.8125rem;
+
+    @include tablet {
+      width: 100%;
+      height: 8vh;
+      margin-left: 0.5rem;
+    }
+
+    @include desktop {
+      width: 3.875rem;
+      height: 3.625rem;
+      margin-left: 0.5rem;
+      margin-top: 1.0625rem;
+    }
+
+  }
+
+  &__card {
+    width: 94%;
+    border-bottom: 0.0625rem solid $mercury;
+
+    &:first-of-type {
+      border-top: 0.0625rem solid $mercury;
+    }
+
+    @include tablet {
+      width: 80%;
+    }
+
+    @include desktop {
+      width: 35.9375rem;
+    }
+  }
+
+  &__submit-button {
+    width: 100%;
+    margin-top: 1.0625rem;
+
+    @include tablet {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__box {
+    margin-top: 2rem;
+
+    img {
+        width: 3.125rem;
+        height: 3.125rem;
+    
+
+      @include tablet{
+        width: 3.125rem;
+        height: 3.125rem;
+      }
+
+
+    }
+
+    @include tablet{
+      margin-left: 5rem;
+      margin-right: 5rem;
+    }
+
+    @include desktop{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__card {
+
+    @include desktop{
+      margin-left: 33%;
+    }
+  }
+
+  &__submit {
+    display: block;
+    height: 3.125rem;
+    width: 100%;
+    background-color: #323232;
+    color: #FFFFFF;
+    border-radius: 0.3125rem;
+    border: none;
+    font-size: 1.25rem;
+
+    @include tablet{
+      width: 50%;
+    }
+
+    @include desktop{
+      height: 3rem;
+      width: 10rem;
+      font-size: 1rem;
+    }
+
+    &:hover {
+      &__button {
+        background-color: $bandSite-darkBlack;
+        cursor: pointer;
+        transition: 1s;
+      }
+    }
+  }
+}

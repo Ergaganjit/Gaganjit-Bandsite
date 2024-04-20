@@ -25,7 +25,7 @@
   align-items: center;
   width: 100%;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .banner {
     height: 100vh;
   }
@@ -42,7 +42,7 @@
   background-position: center;
   width: 100%;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .banner__container {
     height: 100vh;
   }
@@ -50,19 +50,21 @@
 .banner__title {
   font-size: 3rem;
   line-height: 2rem;
+  font-family: "Avenir";
+  font-weight: 600;
   padding-left: 1rem;
   color: #FFFFFF;
   margin: 0;
   z-index: 1;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .banner__title {
     padding-left: 2rem;
     font-size: 3.3rem;
     line-height: 4.3rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .banner__title {
     font-size: 5rem;
     width: 50%;
