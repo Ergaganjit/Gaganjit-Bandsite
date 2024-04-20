@@ -139,7 +139,8 @@
 
   &__nameAndDate-date {
     color: $silver;
-    font-family: 'Avenir Next Regular';
+    font-family: 'Avenir';
+    font-weight: 400;
     display: flex;
     justify-content: right;
     font-size: 1.0625rem;
@@ -151,8 +152,8 @@
   }
 
   &__nameAndDate-name {
-
-    font-family: "Avenir Next Regular";
+    font-family: 'Avenir';
+    font-weight: 400;
     color: #323232;
     font-weight: bold;
     font-size: 1.0625rem;
@@ -162,8 +163,8 @@
   }
 
   &__parg {
-
-    font-family: 'Avenir Next Regular';
+    font-family: 'Avenir';
+    font-weight: 400;
     font-size: 1.125rem;
       margin-top: 0rem;
     // @include mobile {

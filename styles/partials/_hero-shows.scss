@@ -69,6 +69,8 @@
     }
 
     &__text {
+        font-family: "Avenir";
+        font-weight: 600;
         @include desktop {
             display: inline-block;
             width: 50%;
@@ -80,6 +82,8 @@
         line-height: 3.75rem;
         margin-top: 0.625rem;
        color:$white;
+       font-family: "Avenir";
+       font-weight: 600;
 
         @include tablet {
             width: 85%;

@@ -677,19 +677,22 @@ img {
 }
 .comment__nameAndDate-date {
   color: #AFAFAF;
-  font-family: "Avenir Next Regular";
+  font-family: "Avenir";
+  font-weight: 400;
   display: flex;
   justify-content: right;
   font-size: 1.0625rem;
 }
 .comment__nameAndDate-name {
-  font-family: "Avenir Next Regular";
+  font-family: "Avenir";
+  font-weight: 400;
   color: #323232;
   font-weight: bold;
   font-size: 1.0625rem;
 }
 .comment__parg {
-  font-family: "Avenir Next Regular";
+  font-family: "Avenir";
+  font-weight: 400;
   font-size: 1.125rem;
   margin-top: 0rem;
 }
