@@ -37,7 +37,7 @@
     }
 
     &__card {
-        border-bottom: 1px solid $mercury;
+        border-bottom: 0.0625rem solid $mercury;
 
         @include tablet {
             display: flex;
@@ -56,6 +56,9 @@
                 width: 25%;
             }
         }
+    }
+    &__date{
+        font-weight: 600;
     }
 
     &__heading {
@@ -108,6 +111,9 @@
 
         @include tablet {
             width: 25%;
+        }
+        @include desktop {
+            width: 20%;
         }
 
         &:hover {

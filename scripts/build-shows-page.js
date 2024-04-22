@@ -71,6 +71,7 @@ function displayShow(showObj) {
 
     let shows__date = document.createElement("h3");
     shows__date.innerText = showObj["date"];
+    shows__date.className="shows__date"
     shows__card.appendChild(shows__date);
 
     let shows__venueText = document.createElement("p");

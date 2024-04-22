@@ -182,7 +182,7 @@ img {
   }
 }
 .shows__card {
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 0.0625rem solid #E1E1E1;
 }
 @media (min-width: 768px) {
   .shows__card {
@@ -200,6 +200,9 @@ img {
   .shows__card p {
     width: 25%;
   }
+}
+.shows__date {
+  font-weight: 600;
 }
 .shows__heading {
   color: #AFAFAF;
@@ -247,6 +250,11 @@ img {
 @media (min-width: 768px) {
   .shows__button {
     width: 25%;
+  }
+}
+@media (min-width: 1280px) {
+  .shows__button {
+    width: 20%;
   }
 }
 .shows__button:hover__button {
@@ -328,7 +336,7 @@ img {
 }
 @media (min-width: 1280px) {
   .hero__content {
-    margin: 83px;
+    margin: 5.1875rem;
     display: flex;
   }
 }
@@ -336,29 +344,29 @@ img {
   color: #FFFFFF;
   color: #FFFFFF;
   font-weight: 400;
-  margin-left: 26px;
+  margin-left: 1.625rem;
 }
 @media (min-width: 768px) {
   .hero__album {
     font-size: 1.6rem;
-    margin-left: 44px;
+    margin-left: 2.75rem;
   }
 }
 .hero__iframe {
-  margin-left: 26px;
+  margin-left: 1.625rem;
   width: 100%;
   height: 16vh;
 }
 @media (min-width: 768px) {
   .hero__iframe {
     width: 58%;
-    margin-left: 44px;
+    margin-left: 2.75rem;
   }
 }
 @media (min-width: 1280px) {
   .hero__iframe {
     width: 38%;
-    margin-top: 43px;
+    margin-top: 2.6875rem;
   }
 }
 .hero__text {
@@ -378,14 +386,14 @@ img {
   color: #FFFFFF;
   font-family: "Avenir";
   font-weight: 600;
-  margin-left: 26px;
-  font-size: 41px;
+  margin-left: 1.625rem;
+  font-size: 2.5625rem;
 }
 @media (min-width: 768px) {
   .hero__album-details {
     width: 85%;
     font-size: 3.8rem;
-    margin-left: 44px;
+    margin-left: 2.75rem;
   }
 }
 @media (min-width: 1280px) {
