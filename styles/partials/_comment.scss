@@ -15,7 +15,7 @@
     font-family: 'Avenir';
     font-weight: 600;
     color: $bandSite-black;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     padding-left: 0.9375rem;
 
 
@@ -49,11 +49,11 @@
 
   &__label {
     display: block;
-    color: $silver;
-    font-family: 'Avenir';
-    margin-bottom: 0.3125rem;
-    font-size: 0.8125rem;
-    font-weight: 600;
+    color: #AFAFAF;
+    font-family: "Avenir";
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    font-weight: 400;
 
   }
 
@@ -124,16 +124,23 @@
   }
 
   &__picture {
-    margin-top: 1.4375rem;
-    margin-right: 1.25rem;
-    width: 15%;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px;
 
+
+    @include tablet{
+      width: 7rem;
+      height: 4rem;
+      margin-top: 28px;
+    }
     @include desktop {
 
-      margin-top: 0.75rem;
-      margin-right: 1.25rem;
-      width: 15%;
-      height: 9vh;
+      width: 4rem;
+      height: 4rem;
+      margin-top: 34px;
     }
   }
 
@@ -200,21 +207,21 @@
 
   &__profile-picture {
 
-    border-bottom: 0.0625rem solid $mercury;
-    border-radius: 100%;
-    margin-left: 0.8125rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 
     @include tablet {
-      width: 100%;
-      height: 8vh;
-      margin-left: 0.5rem;
+      // width: 100%;
+      // height: 8vh;
+      // margin-left: 0.5rem;
     }
 
     @include desktop {
-      width: 3.875rem;
-      height: 3.625rem;
-      margin-left: 0.5rem;
-      margin-top: 1.0625rem;
+      // width: 3.875rem;
+      // height: 3.625rem;
+      // margin-left: 0.5rem;
+      // margin-top: 1.0625rem;
     }
 
   }
@@ -291,7 +298,8 @@
     font-size: 1.25rem;
 
     @include tablet{
-      width: 50%;
+      width: 37%;
+      height: 6vh;
     }
 
     @include desktop{
