@@ -672,15 +672,13 @@ img {
 }
 @media (min-width: 768px) {
   .comment__picture {
-    width: 7rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     margin-top: 28px;
   }
 }
 @media (min-width: 1280px) {
   .comment__picture {
-    width: 4rem;
-    height: 4rem;
     margin-top: 34px;
   }
 }
@@ -688,15 +686,12 @@ img {
   color: #AFAFAF;
   font-family: "Avenir";
   font-weight: 400;
-  display: flex;
-  justify-content: right;
   font-size: 1.0625rem;
 }
 .comment__nameAndDate-name {
   font-family: "Avenir";
-  font-weight: 400;
+  font-weight: 600;
   color: #323232;
-  font-weight: bold;
   font-size: 1.0625rem;
 }
 .comment__parg {
@@ -722,6 +717,7 @@ img {
 .comment__nameAndDate {
   display: flex;
   padding-top: 0.375rem;
+  justify-content: space-between;
 }
 .comment__profile-picture {
   width: 100%;
@@ -771,8 +767,8 @@ img {
 }
 @media (min-width: 768px) {
   .comment__box {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 6rem;
+    width: 100%;
   }
 }
 @media (min-width: 1280px) {

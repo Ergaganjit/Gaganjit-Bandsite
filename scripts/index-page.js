@@ -30,6 +30,10 @@ function displayComment(commentObj) {
   let comment__row = document.createElement("div");
   comment__row.className = "comment__row";
 
+  let comment__col1 = document.createElement("div");
+  comment__col1.className = "comment__col1";
+
+
   let comment__picture = document.createElement("div");
   comment__picture.className = "comment__picture";
   comment__row.appendChild(comment__picture);
@@ -38,6 +42,10 @@ function displayComment(commentObj) {
   profile__picture.src = "../assets/images/Mohan-muruge.jpg"
   profile__picture.className = "comment__profile-picture";
   comment__picture.appendChild(profile__picture);
+
+  
+  let comment__col2 = document.createElement("div");
+  comment__col2.className = "comment__col2";
 
   let comment__details = document.createElement("div");
   comment__details.className = "comment__details";
@@ -62,8 +70,14 @@ function displayComment(commentObj) {
   comment__text.innerText = commentObj["comment"];
   comment__details.appendChild(comment__text);
 
+  comment__row.appendChild(comment__col1);
+  comment__col1.appendChild(comment__picture);
+
+  comment__row.appendChild(comment__col2);
+  comment__col2.appendChild(comment__details);
   comment__card.appendChild(comment__row);
   commentBox.appendChild(comment__card);
+
 }
 
 for (let i = 0; i < comments.length; i++) {
