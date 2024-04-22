@@ -14,9 +14,13 @@
         /* Shows Style */
         @use '../partials/shows' as *;
 
+
+
         // For shows section
 
         @use '../partials/hero-shows' as *;
+
+        @use '../partials/banner.scss' as *;
 
 
         /* Footer style */

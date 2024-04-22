@@ -226,6 +226,7 @@ img {
 @media (min-width: 1280px) {
   .about__header {
     font-size: 3rem;
+    margin-left: 6rem;
   }
 }
 @media (min-width: 768px) {

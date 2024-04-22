@@ -277,20 +277,37 @@ img {
 }
 
 .hero {
-  background-image: url("../../assets/images/hero-shows.jpg");
+  background: url("../../assets/Images/hero-shows.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 18.75rem;
-  align-items: flex-start;
-}
-@media (min-width: 768px) {
-  .hero {
-    height: 30rem;
-  }
+  height: 50vh;
+  min-height: 15.625rem;
+  max-height: 37.5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 @media (min-width: 1280px) {
   .hero {
-    height: 37.5rem;
+    height: 100vh;
+  }
+}
+.hero__container {
+  background-color: #323232;
+  opacity: 0.3;
+  position: absolute;
+  height: 50vh;
+  min-height: 15.625rem;
+  max-height: 37.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+@media (min-width: 1280px) {
+  .hero__container {
+    height: 100vh;
   }
 }
 @media (min-width: 768px) {
@@ -311,31 +328,37 @@ img {
 }
 @media (min-width: 1280px) {
   .hero__content {
-    padding-top: 10rem;
+    margin: 83px;
     display: flex;
   }
 }
 .hero__album {
   color: #FFFFFF;
+  color: #FFFFFF;
+  font-weight: 400;
+  margin-left: 26px;
 }
 @media (min-width: 768px) {
   .hero__album {
     font-size: 1.6rem;
+    margin-left: 44px;
   }
 }
 .hero__iframe {
-  margin-left: 0.625rem;
+  margin-left: 26px;
   width: 100%;
+  height: 16vh;
 }
 @media (min-width: 768px) {
   .hero__iframe {
-    width: 54%;
+    width: 58%;
+    margin-left: 44px;
   }
 }
 @media (min-width: 1280px) {
   .hero__iframe {
-    width: 30%;
-    margin-top: 8rem;
+    width: 38%;
+    margin-top: 43px;
   }
 }
 .hero__text {
@@ -349,22 +372,84 @@ img {
   }
 }
 .hero__album-details {
-  width: 100%;
+  width: 79%;
   line-height: 3.75rem;
   margin-top: 0.625rem;
   color: #FFFFFF;
   font-family: "Avenir";
   font-weight: 600;
+  margin-left: 26px;
+  font-size: 41px;
 }
 @media (min-width: 768px) {
   .hero__album-details {
     width: 85%;
     font-size: 3.8rem;
+    margin-left: 44px;
   }
 }
 @media (min-width: 1280px) {
   .hero__album-details {
-    font-size: 2.8rem;
+    font-size: 3.8rem;
+  }
+}
+
+.banner {
+  background: url("../../assets/Images/hero-bio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  min-height: 15.625rem;
+  max-height: 37.5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 1280px) {
+  .banner {
+    height: 100vh;
+  }
+}
+.banner__container {
+  background-color: #323232;
+  opacity: 0.3;
+  position: absolute;
+  height: 50vh;
+  min-height: 15.625rem;
+  max-height: 37.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+@media (min-width: 1280px) {
+  .banner__container {
+    height: 100vh;
+  }
+}
+.banner__title {
+  font-size: 3rem;
+  line-height: 2rem;
+  font-family: "Avenir";
+  font-weight: 600;
+  padding-left: 1rem;
+  color: #FFFFFF;
+  margin: 0;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .banner__title {
+    padding-left: 2rem;
+    font-size: 3.3rem;
+    line-height: 4.3rem;
+  }
+}
+@media (min-width: 1280px) {
+  .banner__title {
+    font-size: 5rem;
+    width: 50%;
+    padding-left: 6.25rem;
   }
 }
 
