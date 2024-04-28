@@ -118,29 +118,30 @@
             </section>
         </div>
         <!-- End: Photo Gallery  Section -->
-             <!-- Start: Comments Section -->
-             <article class="comment">
-                <h3 class="comment__title">Join the Conversation</h3>
-                <form action="" method="post" class="comment__form">
-                    <div class="comment__row">
-                        <div class="comment__picture">
-                            <img class="comment__profile-picture" src="./assets/images/Mohan-muruge.jpg"
-                                alt="profile picture">
-                        </div>
-                        <div class="comment__detail">
-                            <label for="name" class="comment__label">NAME</label>
-                            <input type="text" name="name" id="name" placeholder="Enter your name" class="comment__element">
-                            <label for="name" class="comment__label">COMMENT</label>
-                            <input type="text" name="comment" id="comment" placeholder="Add a new comment" class="comment__element-second">
-                            <div class="comment__submit-button">
-                                <button type="submit" class="comment__submit">COMMENT</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <div class="comment__box"></div>
-            </article>
-            <!-- End: Comments Section -->
+ <!-- Start: Comments Section -->
+ <article class="comment">
+    <h3 class="comment__title">Join the Conversation</h3>
+    <form action="" method="post" class="comment__form">
+        <div class="comment__row">
+            <div class="comment__picture">
+                <img class="comment__profile-picture" src="./assets/images/Mohan-muruge.jpg"
+                    alt="profile picture">
+            </div>
+            <div class="comment__detail">
+                <label for="name" class="comment__label">NAME</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" class="comment__element">
+                <label for="name" class="comment__label">COMMENT</label>
+                <input type="text" name="comment" id="comment" placeholder="Add a new comment"
+                    class="comment__element-second">
+                <div class="comment__submit-button">
+                    <button type="submit" class="comment__submit">COMMENT</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="comment__box"></div>
+</article>
+<!-- End: Comments Section -->
     </main>
     <!-- Start: Footer Section -->
     <footer class="footer">
@@ -217,8 +218,9 @@
             <!-- End: Copyright Part -->
         </div>
     </footer>
-    <!-- End : Footer Section -->
-    <script src="./scripts/index-page.js"></script>
+        <!-- End : Footer Section -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+        <script src="./scripts/band-site-api.js"></script>
 </body>
 
 </html>

@@ -780,6 +780,7 @@ img {
 @media (min-width: 1280px) {
   .comment__card {
     margin-left: 33%;
+    width: 34%;
   }
 }
 .comment__submit {
