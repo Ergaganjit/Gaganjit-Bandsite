@@ -190,7 +190,7 @@ function displayShow(showObj) {
 
 // Initialize web page
 let fileName = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
-const BandSite = new BandSiteApi("87349312-568b-4e23-875c-38f92cbf3074");
+const BandSite = new BandSiteApi("87430a53-9bab-4a9a-a4ed-23eeea3ff40c");
 
 // Run required code for particular page
 if (fileName == "index.html") {
